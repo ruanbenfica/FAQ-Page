@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="holdText.js"></script>
+    <title>FAQ Card</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div id="images">
+                <div class="woman">
+                    <picture>
+                        <source id="image-woman-small" media="(max-width:900px)" srcset="images/illustration-woman-online-mobile.svg">
+                        <img id="image-woman" src="images/illustration-woman-online-desktop.svg" alt="">
+                    </picture>
+                    <img id="pattern-mobile" src="images/bg-pattern-mobile.svg" alt="">
+
+                </div>
+
+                <img id="box" src="images/illustration-box-desktop.svg" alt="">
+
+            </div>
+
+            <div id="information">
+                <div id="information-text">
+                    <h1>FAQ</h1>
+                    <div>
+                        <ul>
+
+
+
+                            <div class="topics-with-text">
+                                <div class="topics">
+                                    <li>How many team members can I invite? </li>
+                                    <button type="button" id="button1" onclick="mostrarTexto1()"><img src="images/icon-arrow-down.svg" alt=""></button>
+                                </div>
+                                <div class="text" id="texto1"></div>
+                            </div>
+
+
+                            <div class="topics-with-text">
+                                <div class="topics">
+                                    <li>What is the maximium file upload size?</li>
+                                    <button type="button" id="button2" onclick="mostrarTexto2()"><img src="images/icon-arrow-down.svg" alt=""></button>
+                                </div>
+                                <div class="text" id="texto2"></div>
+                            </div>
+
+
+                            <div class="topics-with-text">
+                                <div class="topics">
+                                    <li>How do I reset my password?</li>
+                                    <button type="button" id="button3" onclick="mostrarTexto3()"><img src="images/icon-arrow-down.svg" alt=""></button>
+                                </div>
+                                <div class="text" id="texto3"></div>
+                            </div>
+
+
+                            <div class="topics-with-text">
+                                <div class="topics">
+                                    <li>Can I cancel my subscription?</li>
+                                    <button type="button" id="button4" onclick="mostrarTexto4()"><img src="images/icon-arrow-down.svg" alt=""></button>
+                                </div>
+                                <div class="text" id="texto4"></div>
+                            </div>
+
+
+                            <div class="topics-with-text">
+                                <div class="topics">
+
+                                    <li id="question5">Do you provide additional support?</li>
+                                    <button type="button" id="button5" onclick="mostrarTexto5()"><img src="images/icon-arrow-down.svg" alt=""></button>
+
+                                </div>
+                                <div class="text" id="texto5"></div>
+                            </div>
+
+
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>

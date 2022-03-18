@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+* {
+    font-family: 'Kumbh Sans', sans-serif;
+    color: var(--desatured-blue);
+    font-size: 14px;
+}
+
+:root {
+    /*text colors*/
+    --desatured-blue: hsl(238, 29%, 16%);
+    --soft-red: hsl(14, 88%, 65%);
+}
+
+html {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    height: 500px;
+    width: 60%;
+    min-width: 750px;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    box-shadow: 0px 0px 5px -4px #000000;
+}
+
+.woman {
+    overflow: hidden;
+    width: 100%;
+    margin: 0;
+    height: 422px;
+}
+
+#box {
+    position: relative;
+    top: -230px;
+    left: -120px;
+    z-index: 50;
+}
+
+#image-woman {
+    max-height: 100%;
+    min-width: 100%;
+    max-width: 115%;
+    position: relative;
+    left: -75px;
+    top: 50px;
+    z-index: 11;
+}
+
+#images {
+    max-height: 500px;
+    background-image: url(images/bg-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: -580px -300px;
+}
+
+#information ul {
+    list-style: none;
+    padding: 0;
+}
+
+#information h1 {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+#information-text {
+    padding: 30px;
+    margin-right: 50px;
+}
+
+.topics {
+    display: flex;
+    justify-content: space-between;
+}
+
+.topics button img {
+    display: flex;
+    align-items: center;
+}
+
+button,
+input[type="submit"],
+input[type="reset"] {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
+.topics-with-text {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    min-height: 28.8px;
+    border-bottom: 2px hsl(240, 5%, 91%) solid;
+}
+
+.text {
+    margin-top: 12px;
+    font-size: 12px;
+}
+
+.rotate img {
+    transform: rotate(180deg);
+}
+
+.topics li {
+    transition: 0.5s;
+}
+
+.topics li:hover {
+    color: var(--soft-red);
+}
+
+#pattern-mobile {
+    display: none;
+}
+
+@media (max-width: 900px) {
+    html {
+        height: auto;
+    }
+    body {
+        min-height: 800px;
+        height: 100vh;
+    }
+    .container {
+        height: 600px;
+        width: 90%;
+        min-width: 0px;
+        display: flex;
+        justify-content: center;
+    }
+    .card {
+        width: 100%;
+        height: 100%;
+        margin-top: 20px;
+        background-color: white;
+        border-radius: 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0px 0px 5px -4px #000000;
+    }
+    #box {
+        display: none;
+    }
+    #images {
+        background-image: none;
+    }
+    #image-woman {
+        max-height: none;
+        min-width: 0%;
+        max-width: none;
+        width: 200px;
+        height: 150px;
+        left: 5px;
+        top: -155px;
+    }
+    .woman {
+        overflow: inherit;
+        width: auto;
+        margin: 0;
+        height: 50px;
+    }
+    #information {
+        width: 90%;
+    }
+    #information-text {
+        padding: 0px 10px 10px 10px;
+        height: 400px;
+        margin-right: 0;
+    }
+    #information h1 {
+        margin-top: 0;
+        text-align: center;
+    }
+    #pattern-mobile {
+        display: block;
+        position: relative;
+        width: 200px;
+        top: -225px;
+        right: -5px;
+    }
+}
